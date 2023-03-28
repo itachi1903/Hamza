@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+    margin: 5px;
+    padding: 0%;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+header {
+    background-color:black;
+    height:50px;
+    width: 100%;
+}
+.heading {
+    color: white;
+    font-size: xx-large;
+    padding: 8px;
+    margin: 0;
+    cursor: pointer;
+}
+.intro {
+    float: left;
+    position: absolute;
+    top: 250px;
+    left:190px;
+    font-size: 30px;
+    margin:0;
+}
+.intro-pic {
+    float: left;
+    position:absolute;
+    top: 100px;
+    right:80px ;
+}
+.open {
+    margin-left: 20px;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 720px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+@media screen and (max-width: 720px) {
+    img {
+        position: relative;
+        left: 80px;
+    }
+    .intro {
+        z-index: 1;
+        position: relative;
+        top: 1px;
+        left: 20px;
+        font-size: 20px;
+    }
+}
+    </style>
+  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAMZA</title>
+    <link rel="icon" type="image/x-icon" href="h-logo.png">
+
+    
+</head>
+<body id="HOME">
+  <header>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="about.html">ABOUT ME</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="reactor.html">REACTOR GAME</a>
+      </div>
+      <span class="open" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; HOME</span>
+  </header>
+    <section id="home">
+      <div class="intro">
+      <h1>Hamza Bilal</h1>
+      <P>Technology is best when it brings <br> people together.</P>
+      </div>
+      <div class="intro-pic">
+        <img src="man-mobile.jpg" alt="man" style="width:500px;height:500px;">
+      </div>
+    </section>
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
+
+</body>
+</html>
